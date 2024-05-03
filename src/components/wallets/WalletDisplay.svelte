@@ -62,9 +62,9 @@
         <div>
           Balance: {formatAmount(balance, 6)}
           {symbol.toUpperCase()} (≈ ${convertToUsd(
-            "xtz",
             balance,
-            price
+            price,
+            "xtz"
           ).toFixed(2)})
         </div>
       {/await}
@@ -74,13 +74,15 @@
         <div>
           Balance: {formatAmount(balance, 9)}
           {symbol.toUpperCase()} (≈ ${convertToUsd(
-            "sol",
             balance,
-            price
+            price,
+            "sol"
           ).toFixed(2)})
         </div>
+        <SolanaTokensDisplay
+          balanceInUsd={convertToUsd(balance, price, "sol")}
+        />
       {/await}
-      <SolanaTokensDisplay />
     {:else}
       <div>Balance: 0 {symbol} (=$0)</div>
     {/if}
