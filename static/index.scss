@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  padding: 0px;
+  margin: 0px;
+  background: rgb(43, 93, 142);
+  background: linear-gradient(
+    160deg,
+    rgba(43, 93, 142, 1) 0%,
+    rgba(28, 41, 54, 1) 60%
+  );
+
+  * {
+    color: white;
+    // <weight>: Use a value from 300 to 900
+    font-family: "Rubik", sans-serif;
+    // font-family: "Comic Sans Ms", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+}
+
+.title {
+  // <weight>: Use a value from 400 to 700
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+button {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+
+  &.primary {
+    background: radial-gradient(
+      161.25% 161.25% at 50.4% 50%,
+      #49afe959,
+      #49afe900
+    );
+    color: #fff;
+    //border: 1px #49afe9 solid;
+    border: 1px #0c7fc1 solid;
+    padding: 10px 15px;
+    border-radius: 10px;
+  }
+
+  &.transparent {
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  &.scale:hover {
+    transform: scale(1.5);
+  }
+
+  img {
+    width: 28px;
+    height: 28px;
+  }
+
+  &.connect {
+    background-color: rgba(43, 93, 142, 1);
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 20px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+
+    img {
+      transition: all 0.2s ease-in-out;
+    }
+
+    &:hover img {
+      transform: scale(1.3);
+    }
+  }
+}
