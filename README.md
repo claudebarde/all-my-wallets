@@ -18,12 +18,12 @@ npm run dev -- --open
 - [x] Connect Tezos wallet
 - [x] Show Tezos tokens
 - [x] Connect Solana wallet
-- [] Show Solana tokens
-- [] Connect Stacks wallet
-- [] Show Stacks tokens
-- [] Connect Ethereum wallet
-- [] Show Ethereum tokens
-- [] Connect Cardano wallet
-- [] Show Cardano tokens
-- [] Show price trends
-- [] Send tokens
+- [ ] Show Solana tokens
+- [ ] Connect Stacks wallet
+- [ ] Show Stacks tokens
+- [ ] Connect Ethereum wallet
+- [ ] Show Ethereum tokens
+- [ ] Connect Cardano wallet
+- [ ] Show Cardano tokens
+- [ ] Show price trends
+- [ ] Send tokens
